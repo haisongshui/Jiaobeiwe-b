@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>筊杯28签</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>筊杯28签</h1>
+        <!-- 虚拟掷杯界面 -->
+        <div id="divination-area">
+            <div class="input-area">
+                <label for="user-question">请输入您的问题：</label>
+                <textarea id="user-question" placeholder="请输入您想询问的问题..."></textarea>
+            </div>
+            <div class="throw-results">
+                <div id="throw-1-result" class="throw-result-item">第一次: -</div>
+                <div id="throw-2-result" class="throw-result-item">第二次: -</div>
+                <div id="throw-3-result" class="throw-result-item">第三次: -</div>
+            </div>
+            <div class="animation-area"></div>
+            <button id="throw-button">开始掷杯</button>
+            <div id="fortune-result" class="fortune-result-container"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    initDivination();
+  });
+</script>
+</body>
+</html>

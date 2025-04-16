@@ -1,0 +1,150 @@
+body {
+    font-family: 'Noto Serif SC', serif;
+    background-color: #f5f3e7;
+    color: #3c2f2f;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #6b4226;
+}
+
+#divination-area {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-area {
+    margin-bottom: 20px;
+}
+
+.input-area label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #6b4226;
+}
+
+.input-area textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.animation-area {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.loading {
+    font-size: 18px;
+    color: #6b4226;
+}
+
+.ritual-animation {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hand-wash {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M30,50 Q50,30 70,50" stroke="%236b4226" fill="none" stroke-width="5"/></svg>');
+}
+
+.incense-circle {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" stroke="%236b4226" fill="none" stroke-width="5"/></svg>');
+}
+
+.cup-throw {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M30,50 L50,30 L70,50 L50,70 Z" stroke="%236b4226" fill="none" stroke-width="5"/></svg>');
+}
+
+.throw-results {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f9f7ed;
+    border-radius: 5px;
+}
+
+.throw-result-item {
+    font-size: 1.5rem; /* Increased font size */
+    font-weight: bold; /* Added bold font weight */
+    color: #6b4226;
+}
+
+#throw-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6b4226;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#throw-button:disabled {
+    background-color: #a08c7d;
+    cursor: not-allowed;
+}
+
+#throw-button:hover:not(:disabled) {
+    background-color: #8a5a3c;
+}
+
+.fortune-result-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff8e1;
+    border: 1px solid #e0d8c3;
+    border-radius: 8px;
+    display: none; /* Initially hidden */
+}
+
+.fortune-result-container h2 {
+    color: #6b4226;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.fortune-result-container h3 {
+    color: #8a5a3c;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.fortune-result-container p {
+    line-height: 1.6;
+    color: #3c2f2f;
+    margin-bottom: 10px;
+}
+
+.error {
+    color: #d9534f;
+    font-weight: bold;
+    text-align: center;
+}
